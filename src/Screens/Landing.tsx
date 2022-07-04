@@ -201,7 +201,7 @@ function Landing(props) {
         window.open("https://indianakuffer-zenith.netlify.app/", "_blank");
         break;
       case "Old Site":
-        window.open("https://www.indianakuffer.com", "_blank");
+        window.open("https://indianakufferold.netlify.app", "_blank");
         break;
       case "Rhythm is 2020":
         window.open("https://indianakuffer.itch.io/rhythm-is-2020", "_blank");
@@ -244,7 +244,6 @@ function Landing(props) {
         textOnlyLine("First off, hello!", 0),
         {
           text: "Indiana",
-          url: "Indiana",
           color: 0,
           position: 8,
           before: "This is ",
@@ -364,6 +363,26 @@ function Landing(props) {
         },
         textOnlyLine("", 0),
         {
+          text: "linkedin",
+          url: "linkedin",
+          color: 3,
+          position: 0,
+          before: "",
+          after: ":........indianakuffer",
+          spins: true,
+        },
+        textOnlyLine("", 0),
+        {
+          text: "github",
+          url: "github",
+          color: 3,
+          position: 0,
+          before: "",
+          after: ":..........indianakuffer",
+          spins: true,
+        },
+        textOnlyLine("", 0),
+        {
           text: "indianakuffer.itch.io",
           url: "itchio",
           color: 4,
@@ -380,26 +399,6 @@ function Landing(props) {
           position: 16,
           before: "instagram:......",
           after: "",
-          spins: true,
-        },
-        textOnlyLine("", 0),
-        {
-          text: "github",
-          url: "github",
-          color: 3,
-          position: 0,
-          before: "",
-          after: ":..........indianakuffer",
-          spins: true,
-        },
-        textOnlyLine("", 0),
-        {
-          text: "linkedin",
-          url: "linkedin",
-          color: 3,
-          position: 0,
-          before: "",
-          after: ":........indianakuffer",
           spins: true,
         },
         textOnlyLine("", 0),
