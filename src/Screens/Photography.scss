@@ -1,0 +1,25 @@
+.photography-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.gallery-wrapper {
+  column-count: 4;
+  margin-right: 80px;
+  padding: 20px;
+}
+
+.back-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}

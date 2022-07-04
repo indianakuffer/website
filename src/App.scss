@@ -1,0 +1,86 @@
+$dark-color: #282828;
+$light-color: #ebdbb2;
+
+* {
+  box-sizing: border-box;
+}
+
+.root {
+  position: relative;
+}
+
+body {
+  background-color: $dark-color;
+  border-color: $light-color;
+  height: 100vh;
+  width: 100vw;
+}
+
+button {
+  font-family: "Source Code Pro";
+  font-size: 14px; // fallback
+  font-size: clamp(10px, 2vw, 20px);
+
+  &.--positive {
+    color: $dark-color;
+    background-color: $light-color;
+    border: 1px solid $dark-color;
+  }
+
+  &.--negative {
+    background-color: $dark-color;
+    color: $light-color;
+    border: 1px solid $light-color;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.square {
+  border: 1px solid currentColor;
+  color: inherit;
+  height: clamp(300px, 80vw, 80vh);
+  width: clamp(300px, 80vw, 80vh);
+  padding: 20px;
+  display: grid;
+}
+
+.accent {
+  background-color: var(--color);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.theme-switcher {
+  position: absolute;
+  right: 32px;
+  bottom: 60px;
+}
+
+.colorblock-wrapper {
+  position: absolute;
+  display: flex;
+  right: 20px;
+  bottom: 20px;
+  .colorblock {
+    width: 15px;
+    height: 30px;
+    background-color: var(--color);
+    transition: transform cubic-bezier(0, -0.02, 0.43, 0.87) 0.5s;
+    transform-origin: bottom center;
+    &:hover {
+      transform: scaleY(1.5);
+    }
+  }
+}

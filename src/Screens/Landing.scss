@@ -1,0 +1,44 @@
+$background-color: #282828;
+
+.line {
+  display: grid;
+  font-size: 14px; // fallback
+  font-size: clamp(10px, 2vw, 20px);
+  font-family: "Source Code Pro";
+  grid-template-columns: repeat(var(--linelength), 1fr);
+}
+
+.text {
+  display: grid;
+  color: var(--color);
+  grid-template-columns: repeat(var(--linklength), 1fr);
+  grid-column-end: span var(--linklength);
+
+  &.url {
+    transition-property: color, background-color;
+    transition-timing-function: ease-out;
+    transition-duration: 0.4s;
+    &:hover {
+      color: $background-color;
+      background-color: var(--color);
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 3px 3px var(--color);
+    }
+  }
+}
+
+.char {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: 600;
+
+  transition: transform ease 0.1s;
+  &.flipping {
+    transform: scaleX(0.1);
+  }
+}
