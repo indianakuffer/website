@@ -429,7 +429,7 @@ function Landing(props) {
         },
         textOnlyLine("∟>Component library", 1),
         {
-          text: "Old Site",
+          text: "Old Portfolio",
           url: "work-old",
           color: 1,
           position: 0,
@@ -645,13 +645,6 @@ function Landing(props) {
         }
       }, 100);
     }, 100);
-  }
-
-  function replaceLine(idx: number, lineObj: Line) {
-    lineObj.spins = true;
-    let newLines = lines;
-    newLines[idx] = lineObj;
-    setLines([...newLines]);
   }
 
   function replaceLines(idxs: number[], lineObjs: Line[]) {

@@ -10,6 +10,7 @@
 img {
   width: 100%;
   margin-bottom: 1em;
+  -webkit-user-drag: none;
 }
 
 .gallery-wrapper {
@@ -22,4 +23,5 @@ img {
   position: fixed;
   top: 20px;
   right: 30px;
+  cursor: pointer;
 }
