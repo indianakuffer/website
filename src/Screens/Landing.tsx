@@ -200,7 +200,7 @@ function Landing(props) {
       case "Zenith":
         window.open("https://indianakuffer-zenith.netlify.app/", "_blank");
         break;
-      case "Old Site":
+      case "Old Portfolio":
         window.open("https://indianakufferold.netlify.app", "_blank");
         break;
       case "Rhythm is 2020":
