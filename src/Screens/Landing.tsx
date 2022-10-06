@@ -182,6 +182,9 @@ function Landing(props) {
       case "Ripple Design System":
         window.open("https://ripple.watermarkinsights.com/", "_blank");
         break;
+      case "Hacker News Refresh":
+        window.open("https://hacker-news-refresh.vercel.app/", "_blank");
+        break;
       case "DSI Thesis Show 2020":
         window.open("https://dsi.sva.edu/thesis-2020", "_blank");
         break;
@@ -429,9 +432,19 @@ function Landing(props) {
         },
         textOnlyLine("∟>Component library", 1),
         {
+          text: "Hacker News Refresh",
+          url: "work-hnr",
+          color: 2,
+          position: 0,
+          before: "",
+          after: "",
+          spins: true,
+        },
+        textOnlyLine("∟>Personal reader", 1),
+        {
           text: "Old Portfolio",
           url: "work-old",
-          color: 1,
+          color: 0,
           position: 0,
           before: "",
           after: "",
@@ -488,8 +501,6 @@ function Landing(props) {
           spins: true,
         },
         textOnlyLine("∟>Card browser", 1),
-        textOnlyLine("", 0),
-        textOnlyLine("", 0),
         textOnlyLine("", 0),
         backLine,
       ]
